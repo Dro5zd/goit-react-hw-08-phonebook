@@ -1,14 +1,13 @@
 import { selectIsAuth, selectUsername } from "../../redux/auth/auth-selectors";
 import {
-  BoxAvatar,
+  BoxAvatar, Container,
   ExitButton,
   ExitLogo,
   Logo,
   UserInfo,
   UserName,
   WrapperHeader,
-  Container,
-} from "./Header.styled";
+} from './Header.styled';
 
 import logo from "../../assets/images/svg/logo.svg";
 import logout from "../../assets/images/svg/logout.svg";
