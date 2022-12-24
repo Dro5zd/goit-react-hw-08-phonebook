@@ -7,8 +7,9 @@ import { ReactComponent as GoogleIcon } from "../../assets/images/svg/google.svg
 import { Button } from "../Button/Button";
 import { useLocation } from "react-router-dom";
 import { useAppDispatch } from "../../redux/store";
-import { loginGoogle, loginUser } from "../../redux/auth/auth-operations";
+import { loginUser } from "../../redux/auth/auth-operations";
 import { createUserService } from "../../http/services.user";
+import {loginGoogleLocal} from '../../redux/auth/authSlice';
 import {
   ErrorText,
   FieldStyle,
@@ -21,6 +22,8 @@ import {
   SubText,
   Content,
 } from "./RegisterForm.styled";
+import {useEffect} from 'react';
+import jwt_decode from 'jwt-decode'
 
 const initialValues = {
   email: "",
@@ -31,6 +34,38 @@ export const RegisterForm = () => {
   const location = useLocation();
   const dispatch = useAppDispatch();
   // const isLoading = useAppSelector(selectIsLoading);
+
+
+  const handleCredentialResponse = (response) => {
+    console.log('JWT`;' + response.credential);
+    let userObject = jwt_decode(response.credential);
+    console.log(userObject);
+  }
+
+  const handleLoginGoogle = (response) => {
+    console.log('JWT`;' + response.credential);
+    let userObject = jwt_decode(response.credential);
+    console.log(userObject);
+    dispatch(loginGoogleLocal(response.credential));
+  };
+
+  useEffect(() => {
+    /*global google*/
+    window.google?.accounts.id.initialize({
+      client_id: '326669474553-lq84fkvc484jv6ni40ic5qfh51h38d5m.apps.googleusercontent.com',
+      callback: handleLoginGoogle,
+    });
+
+    window.google?.accounts.id.renderButton(
+      document.getElementById('signInDiv'),
+      {theme: 'outline', size: 'large', shape: 'pill'}
+    );
+    // window.google?.accounts.id.prompt()
+  }, []);
+
+
+
+
 
   const formik = useFormik({
     initialValues,
@@ -69,9 +104,7 @@ export const RegisterForm = () => {
     },
   });
 
-  const handleLoginGoogle = () => {
-    dispatch(loginGoogle());
-  };
+
 
   const renderButtons = () => {
     if (location.pathname === "/login" || location.pathname === "/") {
@@ -101,6 +134,7 @@ export const RegisterForm = () => {
       <FormStyle onSubmit={formik.handleSubmit}>
         <Content>
           <Text>You can log in with your Google Account:</Text>
+          <div id='signInDiv'></div>
           <ButtonGoogle type="button" onClick={handleLoginGoogle}>
             <GoogleIcon /> Google
           </ButtonGoogle>

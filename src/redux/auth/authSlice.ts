@@ -52,6 +52,13 @@ const authSlice = createSlice({
   name: "auth",
   initialState: authInitialState,
   reducers: {
+    loginGoogleLocal(state, action) {
+  console.log("loginGoogle", state, action);
+  state.isLoading = false;
+  state.token = action.payload;
+  Notify.success(`Welcome back, ${state.user.email}`);
+  state.isAuth = true;
+}
   },
   extraReducers: (builder) => {
     builder
@@ -70,19 +77,19 @@ const authSlice = createSlice({
         state.isAuth = true;
       })
 
-      .addCase(loginGoogle.pending, handlePending)
-      .addCase(loginGoogle.rejected, (state: IInitState, action: any) => {
-        state.isLoading = false;
-        Notify.failure(`Wrong email or password`);
-        state.error = action.payload;
-      })
-      .addCase(loginGoogle.fulfilled, (state, action) => {
-        console.log("loginGoogle", state, action);
-        state.isLoading = false;
-        state.token = action.payload.accessToken;
-        Notify.success(`Welcome back, ${state.user.email}`);
-        state.isAuth = true;
-      })
+      // .addCase(loginGoogle.pending, handlePending)
+      // .addCase(loginGoogle.rejected, (state: IInitState, action: any) => {
+      //   state.isLoading = false;
+      //   Notify.failure(`Wrong email or password`);
+      //   state.error = action.payload;
+      // })
+      // .addCase(loginGoogle.fulfilled, (state, action) => {
+      //   console.log("loginGoogle", state, action);
+      //   state.isLoading = false;
+      //   state.token = action.payload.accessToken;
+      //   Notify.success(`Welcome back, ${state.user.email}`);
+      //   state.isAuth = true;
+      // })
 
       .addCase(logoutUser.pending, handlePending)
       .addCase(logoutUser.rejected, handleRejected)
@@ -108,4 +115,5 @@ const authSlice = createSlice({
       });
   },
 });
+export const { loginGoogleLocal } = authSlice.actions;
 export const authReducer = authSlice.reducer;
