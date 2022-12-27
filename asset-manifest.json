@@ -1,14 +1,41 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.08a0fd91.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.6ef7e892.js",
-    "static/media/BG-wood.jpeg": "/goit-react-hw-08-phonebook/static/media/BG-wood.3b45b67b6c97111f7dc9.jpeg",
-    "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.08a0fd91.css.map": "/goit-react-hw-08-phonebook/static/css/main.08a0fd91.css.map",
-    "main.6ef7e892.js.map": "/goit-react-hw-08-phonebook/static/js/main.6ef7e892.js.map"
+    "main.js": "/goit-team-project-react-kapusta/static/js/main.11ae6d2b.js",
+    "static/media/cabbage-main.svg": "/goit-team-project-react-kapusta/static/media/cabbage-main.7f9cd1b0114db0f5c2e766f6c4926e6c.svg",
+    "static/media/cabbage-desc.svg": "/goit-team-project-react-kapusta/static/media/cabbage-desc.67df318bfcef48173982d51ff7334638.svg",
+    "static/media/cabbage-two.svg": "/goit-team-project-react-kapusta/static/media/cabbage-two.f1c00d62daf56c7bd76d5033f5d84311.svg",
+    "static/media/products.svg": "/goit-team-project-react-kapusta/static/media/products.f8b6bed48b84fa613ddfd2e1fc452d3b.svg",
+    "static/media/cabbage-one.svg": "/goit-team-project-react-kapusta/static/media/cabbage-one.09011763f1a52f75fc5839e96c9253c3.svg",
+    "static/media/hobbies.svg": "/goit-team-project-react-kapusta/static/media/hobbies.e0b93396ed48421845cc3d6ea88580f2.svg",
+    "static/media/alcohol.svg": "/goit-team-project-react-kapusta/static/media/alcohol.c923f34f02d8d5ab93980bfd57090848.svg",
+    "static/media/technique.svg": "/goit-team-project-react-kapusta/static/media/technique.9c0daad1716fce077418dc7a0ca1d0e2.svg",
+    "static/media/logo.svg": "/goit-team-project-react-kapusta/static/media/logo.9a1219fa7b0c5ccef923ebbd77f9ee7b.svg",
+    "static/media/capusta-hero.svg": "/goit-team-project-react-kapusta/static/media/capusta-hero.e3afb02d7747b1a4fb35f2ad9ae444d3.svg",
+    "static/media/health.svg": "/goit-team-project-react-kapusta/static/media/health.cff2117f90173d1985774a084206d039.svg",
+    "static/media/communal.svg": "/goit-team-project-react-kapusta/static/media/communal.d1ef5bbf5986a6fa57a693ff73a2e21f.svg",
+    "static/media/calendar.svg": "/goit-team-project-react-kapusta/static/media/calendar.b1e061bd4be8f24b51bf45bd6ac86ffb.svg",
+    "static/media/google.svg": "/goit-team-project-react-kapusta/static/media/google.82a14c8bfd1918686c1f278473c1069f.svg",
+    "static/media/other.svg": "/goit-team-project-react-kapusta/static/media/other.8dc3183b2d2f4abd5cbf2b8c53b0f0d7.svg",
+    "static/media/transport.svg": "/goit-team-project-react-kapusta/static/media/transport.b762be89b8f5d319e057c2870cae4630.svg",
+    "static/media/housing.svg": "/goit-team-project-react-kapusta/static/media/housing.4cb962eebcc2ca8378b86b1c04c9ab69.svg",
+    "static/media/calculator.svg": "/goit-team-project-react-kapusta/static/media/calculator.bd74ce3461a4518efe3d33f529d436cb.svg",
+    "static/media/entertainment.svg": "/goit-team-project-react-kapusta/static/media/entertainment.7fb9c1d8bcd69bb96fdf58af8851b00b.svg",
+    "static/media/delete.svg": "/goit-team-project-react-kapusta/static/media/delete.1f75e7d5fdb92b67f1cb83926a0dccf7.svg",
+    "static/media/education.svg": "/goit-team-project-react-kapusta/static/media/education.87ad40c45cdd03bea614e4d39c536ec9.svg",
+    "index.html": "/goit-team-project-react-kapusta/index.html",
+    "static/media/logout.svg": "/goit-team-project-react-kapusta/static/media/logout.bde7ea51d65470190b21886710692baf.svg",
+    "static/media/bar-chart.svg": "/goit-team-project-react-kapusta/static/media/bar-chart.1d6a1bb201e77317779865c8c0c51491.svg",
+    "static/media/backspase.svg": "/goit-team-project-react-kapusta/static/media/backspase.8616407ae2c848099afed2ec7f6d2583.svg",
+    "static/media/close.svg": "/goit-team-project-react-kapusta/static/media/close.725652eddfe0bd34d7c252763578a80c.svg",
+    "static/media/arrow-left.svg": "/goit-team-project-react-kapusta/static/media/arrow-left.ed65ae738f78a2df12fa63ecf435fb95.svg",
+    "static/media/arrow-right.svg": "/goit-team-project-react-kapusta/static/media/arrow-right.4a8e7df3679a8f6d1fe7582d50a53944.svg",
+    "static/media/left.svg": "/goit-team-project-react-kapusta/static/media/left.ed65ae738f78a2df12fa63ecf435fb95.svg",
+    "static/media/right.svg": "/goit-team-project-react-kapusta/static/media/right.4a8e7df3679a8f6d1fe7582d50a53944.svg",
+    "static/media/vector.svg": "/goit-team-project-react-kapusta/static/media/vector.d0daa32725811f1fd9548377d47b8559.svg",
+    "static/media/arrow-back.svg": "/goit-team-project-react-kapusta/static/media/arrow-back.edc6c7efc24f9cfafe21df14f85eb4a3.svg",
+    "main.11ae6d2b.js.map": "/goit-team-project-react-kapusta/static/js/main.11ae6d2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.08a0fd91.css",
-    "static/js/main.6ef7e892.js"
+    "static/js/main.11ae6d2b.js"
   ]
 }
